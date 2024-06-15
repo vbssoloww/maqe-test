@@ -1,15 +1,18 @@
-# maqe-test
+# MAQE Test
 
-MAQE Homework Challenge - MAQE Bot
+## MAQE Homework Challenge - MAQE Bot
 
-### How to use
+### How to Use
 
-```
-// install neccesary package (typescript, ts-node)
+```bash
+# Install the necessary packages (TypeScript, ts-node):
 npm install
 
-// run the code
-ts-node program.ts
+# Run the code with your input:
+npm run start <yourInput>
+# Example:
+npm run start W15
 
-// or alternatively if you can run typescript file on your pc you can just directly run program.ts
+# Alternatively, if you can run TypeScript files on your PC, directly execute `program.ts`:
+ts-node program.ts <yourInput>
 ```
