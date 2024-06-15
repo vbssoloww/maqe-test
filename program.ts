@@ -1,9 +1,9 @@
-import * as readline from "readline";
+// import * as readline from "readline";
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
 
 function isValidCommand(walkingCode: string): boolean {
   return /^(?:[RL]|W\d+)+$/.test(walkingCode);
@@ -55,10 +55,14 @@ function maqeBot(walkingCode: string): string {
   return `X: ${x} Y: ${y} Direction: ${direction}`;
 }
 
+const inputData = process.argv[2];
+
+console.log(maqeBot(inputData));
+
 // self testing
 // console.log(maqeBot("RW15RW1"));
 
-rl.question("Please enter the walking code for MAQE Bot: ", (input) => {
-  console.log(maqeBot(input));
-  rl.close();
-});
+// rl.question("Please enter the walking code for MAQE Bot: ", (input) => {
+//   console.log(maqeBot(input));
+//   rl.close();
+// });
